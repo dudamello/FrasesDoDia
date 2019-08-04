@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FrasesDoDia_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="136" height="42" alignment="center" title="Nova Frase" id="qZu-1O-MGI">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.42632105949999999" green="0.55711555479999997" blue="0.1999031305" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="buttonNovaFrase" destination="AgC-eL-Hgc" id="9oC-DN-Ic8"/>
+                            </connections>
+                        </button>
+                        <imageView width="0.10000000000000001" height="0.10000000000000001" alignment="left" image="aspas-esquerda" contentMode="scaleAspectFit" id="Bm6-l2-sRx"/>
+                        <label width="1" height="0.5" alignment="left" textAlignment="center" numberOfLines="0" id="Cl9-fN-2sU">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <imageView width="0.10000000000000001" height="0.10000000000000001" alignment="right" image="aspas-direita" id="LiH-Ph-lsn"/>
+                    </items>
+                    <connections>
+                        <outlet property="lblFrase" destination="Cl9-fN-2sU" id="xOI-cc-ber"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="92.410256410256423" y="56.230769230769234"/>
+        </scene>
+    </scenes>
+</document>
